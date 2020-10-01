@@ -261,7 +261,8 @@ function handleFileSelect(evt) {
 }
 
 getAnimation(null);
-
+// Сделать так, чтобы .getElementById не возвращал null
+//     На html-странице должен присутствовать элемент с id = files
 document
     .getElementById('files')
     .addEventListener('change', handleFileSelect, false);
